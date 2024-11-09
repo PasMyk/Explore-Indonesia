@@ -316,7 +316,7 @@ a {
     color: #FFFFFF;
 }
 
-.header {
+.header-container {
     background-repeat: no-repeat;
     background: url(./image/header-background.png);
     background-size: cover;
@@ -508,4 +508,159 @@ a {
 
 .container {
     margin: 0;
+}
+
+.first-bg {
+    background-image: url(./image/main-background-mountain.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    background-color: #010A20;
+}
+
+.second-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./image/main-background-beach.png);
+    margin: 0;
+    padding: 0;
+    background-color: #010A20;
+}
+
+.highlight-image {
+    width: 630px;
+    height: 460px;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.highlight-2 {
+    padding: 95px 300px 305px 380px;
+}
+
+.highlight-1 {
+    padding: 207px 340px 97px 340px;
+}
+
+.image-hight-1 {
+    padding: 0px 130px 0px 0px;
+}
+
+.image-hight-2 {
+    padding: 0px 0px 0px 125px;
+}
+
+.highlight-title {
+    width: 479px;
+    height: 119px;
+    margin: 0;
+}
+
+.highlight-description {
+    width: 407px;
+    height: 83px;
+    margin: 0;
+}
+
+.btn-secondary {
+    width: 179px;
+    height: 59px;
+}
+
+.secrets-container {
+    padding: 0px 0px 885px 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.secrets {
+    background-image: url(./image/main-background-kid.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gallery-secret {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    padding: 0px 64px;
+}
+
+.icon-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-title {
+    margin: 0;
+    padding: 127px 0px 44px 0px;
+}
+
+.main-circle {
+    fill: rgb(133, 163, 178);
+}
+
+.main-rectangle {
+    fill: rgb(221, 34, 66);
+}
+
+.icon-grid {
+    display: flex;
+    gap: 16px;
+    padding: 28px 0px 0px 0px;
+}
+
+.numbers-container {
+    background-color: rgb(2, 12, 33);
+    opacity: 0.9;
+}
+
+.number-title,
+.number-text,
+.stat-value,
+.stat-description {
+    margin: 0;
+}
+
+.numbers-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 201px 0px 39px 0px;
+}
+
+.number-text {
+    width: 484px;
+    height: 102px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-n-1 {
+    width: 340px;
+    height: 70px;
+}
+
+.stat-n-2 {
+    width: 377px;
+    height: 70px;
+}
+
+.stats-list {
+    display: flex;
+    padding: 0px 0px 225px 0px;
+    gap: 90px;
+    align-items: center;
+    justify-content: center;
 }
