@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/svg+xml" href="./image/symbol-defs.svg#icon-rose" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite App</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +24,7 @@
 <body>
   <header class="header">
     <div class="header-container">
-      <div class="container">
+      <div class="container-fluid">
         <div class="branding">
           <div class="logo">
             <svg class="header-rose-svg" width="24px" height="49px">
@@ -51,7 +51,7 @@
           </div>
         </div>
       </div>
-      <div class="hero-container container">
+      <div class="hero-container container-fluid">
         <div class="hero-content">
           <div class="slide-indicator">
             <div class="rectangle-header"></div>
@@ -62,39 +62,41 @@
             <button type="button" class="btn-primary btn-header">Start Travelling</button>
           </div>
         </div>
-        <ul class="hero-info-list">
+        <div class="hero-list">
           <div class="social-links">
             <p class="date">Fb</p>
             <p class="date">In</p>
             <p class="date">Tw</p>
             <p class="slide-number">01</p>
           </div>
-          <div class="hero-info-collumn">
-            <li class="info-item">
-              <p class="info-number">01</p>
-              <h4 class="info-title">Title Here</h4>
-              <p class="info-text">Lorem ipsum dolor sit amet et amet ist ame.</p>
-            </li>
-            <li class="info-item">
-              <p class="info-number">02</p>
-              <h4 class="info-title">Title Here</h4>
-              <p class="info-text">Lorem ipsum dolor sit amet et amet ist ame.</p>
-            </li>
-            <li class="info-item">
-              <p class="info-number">03</p>
-              <h4 class="info-title">Title Here</h4>
-              <p class="info-text">Lorem ipsum dolor sit amet et amet ist ame.</p>
-            </li>
-          </div>
-          <div class="hero-media">
-            <img src="./image/header-house.png" alt="Media Image" class="hero-img">
-            <div class="header-circle">
-              <svg class="hero-svg-header" width="40px" height="40px">
-                <use xlink:href="./image/symbol-defs.svg#icon-play_arrow" x="" y="" />
-              </svg>
+          <ul class="hero-info-list">
+            <div class="hero-info-collumn">
+              <li class="info-item">
+                <p class="info-number">01</p>
+                <h4 class="info-title">Title Here</h4>
+                <p class="info-text">Lorem ipsum dolor sit amet et amet ist ame.</p>
+              </li>
+              <li class="info-item">
+                <p class="info-number">02</p>
+                <h4 class="info-title">Title Here</h4>
+                <p class="info-text">Lorem ipsum dolor sit amet et amet ist ame.</p>
+              </li>
+              <li class="info-item">
+                <p class="info-number">03</p>
+                <h4 class="info-title">Title Here</h4>
+                <p class="info-text">Lorem ipsum dolor sit amet et amet ist ame.</p>
+              </li>
             </div>
-          </div>
-        </ul>
+            <div class="hero-media">
+              <img src="./image/header-house.png" alt="Media Image" class="hero-img">
+              <div class="header-circle">
+                <svg class="hero-svg-header" width="40px" height="40px">
+                  <use xlink:href="./image/symbol-defs.svg#icon-play_arrow" x="" y="" />
+                </svg>
+              </div>
+            </div>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
@@ -154,7 +156,7 @@
           </svg>
         </div>
       </div>
-      <div class="numbers-container">
+      <div class="numbers-container container-fluid">
         <div class="numbers-header">
           <h2 class="number-title">By The Numbers</h2>
           <p class="number-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et
@@ -185,25 +187,23 @@
       </div>
     </section>
     <section class="hills">
-      <div class="hills-container">
-        <img src="./image/main-decoration-1.png" alt="" class="first-photo">
+      <div class="hills-container container-fluid">
         <h3 class="hill-title">Our Hills and Valleys Are Like Nothing You’ve Seen</h3>
         <p class="hill-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet magna commodo,
           tempus dolor sit amet, laoreet
           elit. Donec mauris tortor.</p>
         <button type="button" class="btn-primary">Learn More</button>
-        <img src="./image/main-decoration-2.png" alt="" class="second-photo">
       </div>
     </section>
     <section class="experiences">
-      <div class="experiences-container">
+      <div class="experiences-container container-fluid">
         <div class="experience-quote">
           <h3 class="experience-title">Live a life like you wouldn’t imagine, experience a life you wouldn’t expect.
           </h3>
           <div class="experience-media">
             <img src="./image/main-live-1.png" alt="experience-image">
-            <svg width="16px" height="16px" class="experience-svg">
-              <use href="./image/symbol-defs.svg#icon-arrow-right" x="" y="" />
+            <svg width="30px" height="30px" class="experience-svg">
+              <use href="./image/symbol-defs.svg#icon-play_arrow" x="" y="" />
             </svg>
             <div class="circle-svg"></div>
           </div>
@@ -221,62 +221,91 @@
             <img src="./image/main-live-3.png" alt="experience-image-list">
             <div class="experience-content">
               <h3 class="experience-content-title">In The City</h3>
-              <p class="experience-content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in.</p>
+              <p class="experience-content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                dapibus mauris in.</p>
             </div>
           </li>
         </ul>
       </div>
     </section>
     <section class="gallery">
-      <div class="container gallery-container">
+      <div class="gallery-container container-fluid">
         <h2 class="gallery-title">Photo Gallery</h2>
-        <p class="gallery-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="gallery-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in
+          lectus tempus, eget tincidunt.</p>
         <div class="gallery-images">
-          <img src="" alt="Gallery Image">
-          <img src="" alt="Gallery Image">
-          <img src="" alt="Gallery Image">
-          <img src="" alt="Gallery Image">
-          <img src="" alt="Gallery Image">
-          <img src="" alt="Gallery Image">
+          <div class="main-img-12">
+            <img src="./image/main-gallery-1.png" alt="Gallery Image" class="main-img_1">
+            <img src="./image/main-gallery-4.png" alt="Gallery Image" class="main-img_2">
+          </div>
+          <div class="main-img-34">
+            <img src="./image/main-gallery-2.png" alt="Gallery Image" class="main-img_3">
+            <img src="./image/main-gallery-5.png" alt="Gallery Image" class="main-img_4">
+          </div>
+          <div class="main-img-56">
+            <img src="./image/main-gallery-3.png" alt="Gallery Image" class="main-img_5">
+            <img src="./image/main-gallery-6.png" alt="Gallery Image" class="main-img_6">
+          </div>
         </div>
       </div>
     </section>
     <section class="getting-there">
-      <div class="container getting-there-container">
+      <div class="getting-there-container">
         <h2 class="getting-there-title">Getting There</h2>
         <ul class="getting-there-list">
+          <div class="search-line"></div>
           <li class="getting-there-item">
-            <div class="icon-title">
-              <svg></svg>
-              <h4 class="getting-pretitle">Booking Your Flights</h4>
+            <div class="getting-block">
+              <div class="getting-circle">1</div>
+              <div class="icon-title">
+                <h4 class="getting-pretitle">Booking Your Flights</h4>
+                <p class="getting-pretext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus
+                  mauris
+                  in lectus tempus, eget tincidunt lacus
+                  varius. Sed euismod orci dictum faucibus malesuada. Praesent sed eros tincidunt, viverra neque auctor,
+                  lobortis enim.</p>
+              </div>
             </div>
-            <p class="getting-pretext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </li>
           <li class="getting-there-item">
-            <div class="icon-title">
-              <svg></svg>
-              <h4 class="getting-pretitle">
-                </h3>>Choosing Your Hotel</h4>
+            <div class="getting-block">
+              <div class="getting-circle">2</div>
+              <div class="icon-title">
+                <h4 class="getting-pretitle">Choosing Your Hotel</h4>
+                <p class="getting-pretext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus
+                  mauris
+                  in lectus tempus, eget tincidunt lacus
+                  varius. Sed euismod orci dictum faucibus malesuada. Praesent sed eros tincidunt, viverra neque auctor,
+                  lobortis enim.</p>
+                <ul class="sub-list">
+                  <li class="sub-item">
+                    <img src="./image/main-getting.png" alt="Sub-item Image">
+                    <svg class="play-arrow-getting" width="40px" height="40px">
+                      <use xlink:href="./image/symbol-defs.svg#icon-play_arrow" x="" y="" />
+                    </svg>
+                    <div class="sub-content">
+                      <h4 class="getting-pretitle">Travelling There</h4>
+                      <p class="getting-pretext sub-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus dapibus
+                        mauris in lectus tempus, eget tincidunt.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <p class="getting-pretext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <ul class="sub-list">
-              <li class="sub-item">
-                <img src="" alt="Sub-item Image">
-                <div class="sub-content">
-                  <h4 class="getting-pretitle">Travelling There</h4>
-                  <p class="getting-pretext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </li>
+          <li class="getting-there-item">
+            <div class="getting-block">
+              <div class="getting-circle">3</div>
+              <div class="icon-title getting-end">
+                <h4 class="getting-pretitle">Planning Your Experiences</h4>
+                <div class="item-content">
+                  <p class="getting-pretext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus
+                    mauris in lectus tempus, eget tincidunt lacus
+                    varius.</p>
+                  <button type="button" class="btn-secondary">Learn More</button>
                 </div>
-              </li>
-            </ul>
-          </li>
-          <li class="getting-there-item">
-            <div class="icon-title">
-              <svg></svg>
-              <h3 class="getting-pretitle">Planning Your Experiences</h3>
-            </div>
-            <div class="item-content">
-              <p class="getting-pretext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <button type="button" class="btn-secondary">Learn More</button>
+              </div>
             </div>
           </li>
         </ul>
@@ -284,9 +313,11 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="container footer-container">
+    <div class="footer-container container-fluid">
       <div class="footer-branding">
-        <img src="" alt="Footer Logo">
+        <svg width="25px" height="50" class="footer-svg">
+          <use xlink:href="./image/symbol-defs.svg#icon-rose" x="" y="" />
+        </svg>
         <div class="footer-text">
           <span class="footer-span">Explore</span>
           <p class="footer-title">Indonesia</p>
@@ -299,12 +330,22 @@
         <li><a href="" class="footer-link">Blog</a></li>
       </ul>
       <div class="footer-social">
-        <svg></svg>
-        <svg></svg>
-        <svg></svg>
+        <svg class="social-svg" width="30px" height="30px">
+          <use xlink:href="./image/symbol-defs.svg#icon-facebook" x="" y="" />
+        </svg>
+        <svg class="social-svg" width="30px" height="30px">
+          <use xlink:href="./image/symbol-defs.svg#icon-linkedin" x="" y="" />
+        </svg>
+        <svg class="social-svg" width="30px" height="30px">
+          <use xlink:href="./image/symbol-defs.svg#icon-google" x="" y="" />
+        </svg>
         <p class="date-of-copy">Copyright © 2019</p>
       </div>
-      <svg></svg>
+      <div class="footer-circle">
+        <svg class="button-svg-footer" width="40px" height="20px">
+          <use xlink:href="./image/symbol-defs.svg#icon-arrow-up" x="" y="" />
+        </svg>
+      </div>
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
